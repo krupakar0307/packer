@@ -23,7 +23,8 @@ source "amazon-ebs" "jenkins-ami" {
   source_ami                                = local.source_ami_id
   ssh_username                              = "ubuntu"
   temporary_security_group_source_public_ip = true
-
+  # vpc_id = var.vpc_id
+  # subnet_id = var.subnet_id
   launch_block_device_mappings {
     device_name           = "/dev/sda1"
     delete_on_termination = true

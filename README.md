@@ -124,3 +124,11 @@ Commands to run packer validate and build.
 For More CLI Commands and flags, Refer: https://developer.hashicorp.com/packer/docs/commands/build
 
 =================================================================================
+
+## How to use above packer configuration for Jenkins AMI
+- Install packer in your machine based on OS type : [Install](https://developer.hashicorp.com/packer/tutorials/docker-get-started/get-started-install-cli#installing-packer)
+
+- Clone the above code and place your inputs in variable file, uncomment `vpc_id` and `subnet_id` if you wanna build ami in non-default vpc.
+- Then APply `packer validate .` to validate configuration and build AMI using `packer build .` That's all it will create an AMI in couple of minutes.
+
+---

@@ -1,7 +1,7 @@
 ## variables
 variable "region" {
   type    = string
-  default = "us-east-1"
+  default = "ap-northeast-3"
 
 }
 
@@ -15,3 +15,12 @@ variable "instance_type" {
   }
 }
 
+# variable "vpc_id" {
+#   type = string
+#   default = "vpc-0c3976bf5269cbc19"
+# }
+
+# variable "subnet_id" {
+#   type = string
+#   default = "subnet-05a487c60d5ad8fc1"
+# }

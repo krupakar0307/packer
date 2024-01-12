@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ex
+set -exo # -e for error exit, -X for trace debug, -o for pipefail out
 ##Install Java
 sudo apt update
 sudo apt install fontconfig openjdk-17-jre -y
