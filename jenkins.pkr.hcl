@@ -22,6 +22,7 @@ source "amazon-ebs" "jenkins-ami" {
   region                                    = var.region
   source_ami                                = local.source_ami_id
   ssh_username                              = "ubuntu"
+  force_delete_snapshot                     = false
   temporary_security_group_source_public_ip = true
   # vpc_id = var.vpc_id
   # subnet_id = var.subnet_id
